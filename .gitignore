@@ -1,2 +1,4 @@
 .env
-webserver.py
+.replit
+pyproject.toml
+poetry.lock
