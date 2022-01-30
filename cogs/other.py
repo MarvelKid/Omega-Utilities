@@ -25,7 +25,7 @@ class Other(commands.Cog):
         DiscordComponents(self.bot)
         print(f"Logged in as {self.bot.user} ({self.bot.user.id})")
         await self.bot.change_presence(status=discord.Status.idle, activity=discord.Game(f"{prefix}help"))
-		await self.bot.fetch_channel(935144122019373086).send("I am online")
+        await self.bot.get_channel(935144122019373086).send("I am online")
 		
         data = lf()
         try:

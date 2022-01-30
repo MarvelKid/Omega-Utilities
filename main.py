@@ -1,6 +1,7 @@
 import discord, os
 from discord.ext import commands
 from dotenv import load_dotenv
+from webserver import keep_alive
 
 load_dotenv()
 prefix = os.getenv('PREFIX')
@@ -74,4 +75,5 @@ for file in os.listdir('cogs'):
 bot.load_extension('jishaku')
 print(f"Loaded extension:- jishaku")
 
+# keep_alive()
 bot.run(os.getenv('TOKEN'))
